@@ -6,7 +6,24 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        branding: {
+          white: {
+            DEFAULT: "#EFEFEF",
+            darken: {
+              DEFAULT: "#E8E8E5",
+            },
+          },
+          green: {
+            DEFAULT: "#CACCAF",
+            darken: {
+              DEFAULT: "#7E9159",
+            },
+          },
+        },
+      },
+    },
   },
   plugins: [
     function ({ addVariant }) {
