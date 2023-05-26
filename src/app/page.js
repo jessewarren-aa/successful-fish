@@ -7,7 +7,7 @@ export default function Home() {
       <div className="w-full h-[90px] relative border-b-[3px] border-branding-black">
         <Image
           src={header.src}
-          alt="header image of a signature and simple aesthetic background with keyboard, mouse, clipboard, and plants"
+          alt="this is an image of a person's hand-written signature and simple aesthetic background with a keyboard, a mouse, a clipboard, and some plants"
           layout="fill"
           objectFit="cover"
           objectPosition="center"
