@@ -18,9 +18,7 @@ export default function RootLayout({ children }) {
           "flex-center h-screen bg-branding-white"
         )}
       >
-        <section className="border-2 border-branding-black w-[375px] h-[844px]">
-          {children}
-        </section>
+        <section className="w-[375px] h-[844px]">{children}</section>
       </body>
     </html>
   );
