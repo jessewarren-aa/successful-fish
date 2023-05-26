@@ -1,4 +1,5 @@
 import "./globals.css";
+import clsx from "clsx";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -11,7 +12,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={clsx(
+          inter.className,
+          "flex-center h-screen bg-branding-white"
+        )}
+      >
+        <section className="border-2 border-branding-black w-[375px] h-[844px]">
+          {children}
+        </section>
+      </body>
     </html>
   );
 }
