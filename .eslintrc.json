@@ -1,3 +1,25 @@
 {
-  "extends": "next/core-web-vitals"
+  "env": { "browser": true, "node": true, "es6": true },
+  "ignorePatterns": ["node_modules", "**/*.json", "build", "dist"],
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime"
+  ],
+  "rules": {
+    "react/prop-types": "off",
+    "react/jsx-wrap-multilines": "warn",
+    "semi": "warn",
+    "no-duplicate-imports": "error",
+    "no-console": "error",
+    "quotes": [
+      "warn",
+      "double",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
+      }
+    ]
+  }
 }
