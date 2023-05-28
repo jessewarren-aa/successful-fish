@@ -11,15 +11,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={clsx(
-          inter.className,
-          "flex-center h-screen bg-branding-white"
-        )}
-      >
-        <section className="w-[375px] h-[844px]">{children}</section>
-      </body>
+    <html lang="en" className="h-full bg-gray-100">
+      <body className={clsx(inter.className, "h-full")}>{children}</body>
     </html>
   );
 }

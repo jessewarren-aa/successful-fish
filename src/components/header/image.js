@@ -6,15 +6,15 @@ export default function HeaderImage({ imageSrc, imageAlt, doubleSize }) {
     <div
       className={clsx(
         "w-full relative border-2 border-branding-black",
-        doubleSize ? "h-[180px]" : "h-[90px]"
+        doubleSize ? "h-[194px]" : "h-[97px]"
       )}
     >
       <Image
         src={imageSrc}
         alt={imageAlt}
-        layout="fill"
-        objectFit="cover"
-        objectPosition="center"
+        className="object-center object-cover box-content"
+        width={375}
+        height={1}
       />
     </div>
   );
